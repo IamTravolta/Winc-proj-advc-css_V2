@@ -1,0 +1,164 @@
+@mixin flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pstn {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin sm-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:0;
+    color: white;
+    transition: 250ms;
+    overflow: hidden;
+    font-size: 28px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sm-btn-aftr {
+    min-width: 300px;
+    height: 30px;
+    color:white;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 5px;
+    
+}
+
+
+#sm-container{
+    @include pstn();
+
+    .content-holder{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position:relative;
+        float: right;
+        top: -20%;
+        display: block;
+
+        & > *{
+            float: right;
+            display: flex;
+            justify-content: left;
+            align-content: center;
+            position:absolute;
+        }
+    }
+}
+
+
+.blog{
+    @include sm-btn();
+
+    &:hover{
+        width: 300px;
+    }
+
+    &::after{
+        content:"Check our blog";
+        @include sm-btn-aftr();
+    }
+}
+
+
+.linkedin{
+    @include sm-btn();
+    top: 70px;
+
+    &:hover{
+        width: 300px;
+    }
+
+    &::after{
+        content:"Follow us on Linkedin";
+        @include sm-btn-aftr();
+    }
+}
+
+
+.facebook{
+    @include sm-btn();
+    top: 124px;
+
+    &:hover{
+        width: 300px;
+    }
+
+    &::after{
+        content:"Follow us on facebook";
+        @include sm-btn-aftr();
+    }
+}
+
+
+.twitter{
+    @include sm-btn();
+    top: 178px;
+
+    &:hover{
+        width: 300px;
+    }
+
+    &::after{
+        content:"Follow us on twitter";
+        @include sm-btn-aftr();
+    }
+}
+
+
+.github{
+    @include sm-btn();
+    top: 232px;
+
+    &:hover{
+        width: 300px;
+    }
+
+    &::after{
+        content:"Follow us on github";
+        @include sm-btn-aftr();
+    }
+}
+
+
+
+
+.blog {
+    background-color: #e17b77;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00aced;
+}
+
+.github {
+    background-color: #333;
+}
+
+.linkedin {
+    background-color: #007bb6;
+}
+
+
+/* end of third project*/

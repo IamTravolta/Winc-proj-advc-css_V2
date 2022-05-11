@@ -1,0 +1,248 @@
+#sm-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sm-container .content-holder {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+  float: right;
+  top: -20%;
+  display: block;
+}
+
+#sm-container .content-holder > * {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+}
+
+.blog {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
+  font-size: 28px;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog:hover {
+  width: 300px;
+}
+
+.blog::after {
+  content: "Check our blog";
+  min-width: 300px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.linkedin {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
+  font-size: 28px;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 70px;
+}
+
+.linkedin:hover {
+  width: 300px;
+}
+
+.linkedin::after {
+  content: "Follow us on Linkedin";
+  min-width: 300px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
+  font-size: 28px;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 124px;
+}
+
+.facebook:hover {
+  width: 300px;
+}
+
+.facebook::after {
+  content: "Follow us on facebook";
+  min-width: 300px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.twitter {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
+  font-size: 28px;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 178px;
+}
+
+.twitter:hover {
+  width: 300px;
+}
+
+.twitter::after {
+  content: "Follow us on twitter";
+  min-width: 300px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.github {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
+  font-size: 28px;
+  margin: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 232px;
+}
+
+.github:hover {
+  width: 300px;
+}
+
+.github::after {
+  content: "Follow us on github";
+  min-width: 300px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.blog {
+  background-color: #e17b77;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #00aced;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin {
+  background-color: #007bb6;
+}
+
+/* end of third project*/
+/*# sourceMappingURL=third-style.css.map */

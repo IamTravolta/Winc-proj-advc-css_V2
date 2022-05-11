@@ -1,0 +1,120 @@
+@mixin flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pstn {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin sm-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:0;
+    color: white;
+    transition: 250ms;
+    overflow: hidden;
+    font-size: 28px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sm-btn-aftr {
+    min-width: 300px;
+    height: 30px;
+    color:white;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 5px;
+    
+}
+
+
+#stacks-container{
+    overflow: hidden;
+
+    #stacks {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        padding: 2rem;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+    }
+
+    .stacks-img{
+        width: 100%;
+        height:100%;
+        position: relative;
+        border: 5px solid rgb(182, 180, 180);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 500ms;
+
+        &:hover img{
+            transition: 500ms;
+            transform: scale(1.3);
+        }
+
+        & img{
+            transition: 500ms;
+            transform: scale(1.1);
+
+        }
+    }
+
+    .stacks-btn{
+        @include flexer();
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 500ms;
+
+        &:hover{
+            background-color: #b6b4b4;
+        }
+    }
+}
+
+.stacks-btn button{
+padding: 1rem;
+font-size: 20px;
+border: 1px solid #b6b4b4;
+border-radius: 10px;
+color: #959393;
+text-transform: uppercase;
+transition: 250ms;
+transform: scale(0);
+}
+
+.stacks-btn button:hover{
+    color: white;
+    background-color: #959393;
+}
+
+.stacks-btn:hover button{
+    opacity:1;
+    transition: 250ms;
+    transform: scale(1);
+}
+
+/* end of second project css*/
